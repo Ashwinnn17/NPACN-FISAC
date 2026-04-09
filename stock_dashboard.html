@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS TRADE — Stock Tracker</title>
+<link rel="stylesheet" href="stock_dashboard.css">
+</head>
+<body>
+<div class="wrap">
+
+<!-- AUTH -->
+<div id="auth-panel">
+  <div class="auth-card">
+    <h1>NEXUS TRADE</h1>
+    <p>Real-Time Market Terminal — Group 14</p>
+
+    <div class="auth-field">
+      <label>Account</label>
+      <select id="auth-user-select">
+        <option value="TOKEN-ASHWIN-001">ashwin — Senior Analyst</option>
+        <option value="TOKEN-ADMIN-002">admin — Administrator</option>
+        <option value="TOKEN-DEMO-003">demo — Read-Only</option>
+        <option value="TOKEN-TEST-004">test — Test Account</option>
+      </select>
+    </div>
+    <div class="auth-field">
+      <label>Access Token</label>
+      <input type="text" id="auth-token" value="TOKEN-ASHWIN-001" spellcheck="false">
+    </div>
+    <div class="auth-field">
+      <label>Server</label>
+      <input type="text" id="auth-server" value="ws://localhost:8765" spellcheck="false">
+    </div>
+
+    <button class="auth-btn" id="auth-btn">CONNECT</button>
+    <div class="auth-error" id="auth-error"></div>
+
+    <div class="auth-demo-hint">
+      Demo mode activates automatically if the server is unreachable.<br>
+      Backend: <span>ws://localhost:8765</span> &nbsp;|&nbsp;
+      Tokens: <span>TOKEN-ASHWIN-001</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="logo-text">NEXUS TRADE</div>
+    <!-- <div class="logo-sub">GROUP-14 &middot; CN ASSIGNMENT</div> -->
+  </div>
+  <div class="header-center">
+    <span class="clock" id="clock">--:--:--</span>
+    <span id="market-status" style="color:#22c55e">&#9679; MARKET OPEN</span>
+  </div>
+  <div class="header-right">
+    <div id="source-badge" class="source-badge source-none">NO SOURCE</div>
+    <div class="conn-badge" id="conn-badge">
+      <div class="conn-dot"></div>
+      <span id="conn-text">DISCONNECTED</span>
+    </div>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner" id="ticker-inner"></div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- STOCK GRID -->
+  <div class="stocks-section">
+    <div class="sec-label">
+      <span>MARKET OVERVIEW</span>
+      <span style="display:flex;gap:8px;">
+        <span class="detail-chip sel" id="selected-label">AAPL</span>
+        <span class="detail-chip" id="update-counter">0 UPDATES</span>
+      </span>
+    </div>
+    <div class="stocks-grid" id="stocks-grid"></div>
+  </div>
+
+  <!-- CHART -->
+  <div class="chart-section">
+    <div class="sec-label">
+      <span id="chart-title">PRICE HISTORY — AAPL</span>
+      <span style="color:#555">60 TICKS &middot; 1Hz</span>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="priceChart"></canvas>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sec-label">CONNECTION</div>
+    <div class="conn-info">
+      <div class="info-row"><span class="info-label">PROTOCOL</span><span class="info-val" id="inf-proto">—</span></div>
+      <div class="info-row"><span class="info-label">STATE</span><span class="info-val" id="inf-state">CLOSED</span></div>
+      <div class="info-row"><span class="info-label">USER</span><span class="info-val ok" id="inf-user">—</span></div>
+      <div class="info-row"><span class="info-label">LATENCY</span><span class="info-val" id="inf-lat">—</span></div>
+      <div class="latency-bar"><div class="latency-fill" id="lat-fill" style="width:0%"></div></div>
+      <div class="info-row" style="margin-top:5px;"><span class="info-label">MSGS</span><span class="info-val" id="inf-msgs">0</span></div>
+      <div class="info-row"><span class="info-label">BYTES</span><span class="info-val" id="inf-bytes">0 B</span></div>
+      <div class="info-row"><span class="info-label">UPTIME</span><span class="info-val" id="inf-uptime">—</span></div>
+    </div>
+
+    <div class="sec-label">SOCKET OPTIONS</div>
+    <div class="socket-opts">
+      <div class="opt-row"><span class="opt-name">SO_REUSEADDR</span><span class="opt-on">ON</span></div>
+      <div class="opt-row"><span class="opt-name">TCP_NODELAY</span><span class="opt-on">ON</span></div>
+      <div class="opt-row"><span class="opt-name">SO_KEEPALIVE</span><span class="opt-on">ON</span></div>
+      <div class="opt-row"><span class="opt-name">TCP_KEEPIDLE</span><span class="opt-val">30s</span></div>
+      <div class="opt-row"><span class="opt-name">TCP_KEEPINTVL</span><span class="opt-val">10s</span></div>
+      <div class="opt-row"><span class="opt-name">TCP_KEEPCNT</span><span class="opt-val">3</span></div>
+      <div class="opt-row"><span class="opt-name">SO_SNDBUF</span><span class="opt-val">256 KB</span></div>
+      <div class="opt-row"><span class="opt-name">SO_RCVBUF</span><span class="opt-val">64 KB</span></div>
+      <div class="opt-row"><span class="opt-name">TLS</span><span class="opt-on">1.2+</span></div>
+    </div>
+
+    <div class="sec-label">
+      <span>SYSTEM LOG</span>
+      <span id="log-count" style="color:#555">0 EVENTS</span>
+    </div>
+    <div class="event-log">
+      <div class="log-entries" id="log-entries"></div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item"><span class="stat-label">MSG/SEC</span><span class="stat-value" id="stat-mps">0</span></div>
+      <div class="stat-item"><span class="stat-label">TICKS</span><span class="stat-value" id="stat-ticks">0</span></div>
+      <div class="stat-item"><span class="stat-label">AVG LAT</span><span class="stat-value" id="stat-lat">0ms</span></div>
+      <div class="stat-item"><span class="stat-label">DB REC</span><span class="stat-value" id="stat-db">—</span></div>
+    </div>
+
+  </div>
+
+</div><!-- /main -->
+</div><!-- /wrap -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="stock_dashboard.js"></script>
+</body>
+</html>

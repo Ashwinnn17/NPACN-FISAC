@@ -1,0 +1,803 @@
+2026-03-30T09:29:15 [INFO] StockServer: ============================================================
+2026-03-30T09:29:15 [INFO] StockServer:   Real-Time Stock Tracker — Group-14 CN Assignment
+2026-03-30T09:29:15 [INFO] StockServer: ============================================================
+2026-03-30T09:29:15 [WARNING] StockServer: [TLS] No cert found — running in plaintext WS (dev only)
+2026-03-30T09:29:15 [INFO] StockServer: [SERVER] Listening: ws://0.0.0.0:8765
+2026-03-30T09:29:15 [INFO] StockServer: [SERVER] Valid tokens: ['TOKEN-ASHWIN-001', 'TOKEN-ADMIN-002', 'TOKEN-DEMO-003', 'TOKEN-TEST-004']
+2026-03-30T09:29:15 [INFO] StockServer: [SERVER] DB: db/stocks.db
+2026-03-30T09:29:15 [INFO] StockServer: [BROADCAST] Starting at 1.0 Hz
+2026-03-30T09:30:14 [INFO] StockServer: [TICK=60] clients=0 msgs=0 bytes=0
+2026-03-30T09:30:25 [INFO] StockServer: [SERVER] Shutdown...
+2026-03-30T09:30:25 [INFO] StockServer: [SERVER] Final DB stats: {'price_records': 560, 'connections': 0, 'auth_failures': 0, 'auth_blocked': 0}
+2026-03-30T09:31:29 [INFO] StockServer: ============================================================
+2026-03-30T09:31:29 [INFO] StockServer:   Real-Time Stock Tracker — Group-14 CN Assignment
+2026-03-30T09:31:29 [INFO] StockServer: ============================================================
+2026-03-30T09:31:29 [WARNING] StockServer: [TLS] No cert found — running in plaintext WS (dev only)
+2026-03-30T09:31:29 [INFO] StockServer: [SERVER] Listening: ws://0.0.0.0:8765
+2026-03-30T09:31:29 [INFO] StockServer: [SERVER] Valid tokens: ['TOKEN-ASHWIN-001', 'TOKEN-ADMIN-002', 'TOKEN-DEMO-003', 'TOKEN-TEST-004']
+2026-03-30T09:31:29 [INFO] StockServer: [SERVER] DB: db/stocks.db
+2026-03-30T09:31:29 [INFO] StockServer: [BROADCAST] Starting at 1.0 Hz
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62515
+2026-03-30T09:31:39 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T09:31:39 [INFO] StockServer: [CM] +127.0.0.1:62515 (admin) | active=1
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62516
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62517
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62518
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62519
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62520
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62521
+2026-03-30T09:31:39 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:39 [INFO] StockServer: [CM] +127.0.0.1:62516 (ashwin) | active=2
+2026-03-30T09:31:39 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-03-30T09:31:39 [INFO] StockServer: [CM] +127.0.0.1:62517 (test) | active=3
+2026-03-30T09:31:39 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:39 [INFO] StockServer: [CM] +127.0.0.1:62518 (ashwin) | active=4
+2026-03-30T09:31:39 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T09:31:39 [INFO] StockServer: [CM] +127.0.0.1:62519 (demo) | active=5
+2026-03-30T09:31:39 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T09:31:39 [INFO] StockServer: [CM] +127.0.0.1:62520 (admin) | active=6
+2026-03-30T09:31:39 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T09:31:39 [INFO] StockServer: [CM] +127.0.0.1:62521 (demo) | active=7
+2026-03-30T09:31:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:62522
+2026-03-30T09:31:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:62523
+2026-03-30T09:31:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:62524
+2026-03-30T09:31:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T09:31:41 [INFO] StockServer: [CM] +127.0.0.1:62522 (admin) | active=8
+2026-03-30T09:31:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:62525
+2026-03-30T09:31:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-03-30T09:31:41 [INFO] StockServer: [CM] +127.0.0.1:62523 (test) | active=9
+2026-03-30T09:31:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:41 [INFO] StockServer: [CM] +127.0.0.1:62524 (ashwin) | active=10
+2026-03-30T09:31:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T09:31:41 [INFO] StockServer: [CM] +127.0.0.1:62525 (admin) | active=11
+2026-03-30T09:31:41 [INFO] StockServer: [CM] -127.0.0.1:62516 | active=10
+2026-03-30T09:31:42 [INFO] StockServer: [WS] ashwin@127.0.0.1:62516 fully disconnected
+2026-03-30T09:31:42 [INFO] StockServer: [CM] -127.0.0.1:62517 | active=9
+2026-03-30T09:31:42 [INFO] StockServer: [WS] test@127.0.0.1:62517 fully disconnected
+2026-03-30T09:31:42 [INFO] StockServer: [CM] -127.0.0.1:62518 | active=8
+2026-03-30T09:31:42 [INFO] StockServer: [WS] ashwin@127.0.0.1:62518 fully disconnected
+2026-03-30T09:31:42 [INFO] StockServer: [CM] -127.0.0.1:62519 | active=7
+2026-03-30T09:31:42 [INFO] StockServer: [WS] demo@127.0.0.1:62519 fully disconnected
+2026-03-30T09:31:42 [INFO] StockServer: [CM] -127.0.0.1:62520 | active=6
+2026-03-30T09:31:42 [INFO] StockServer: [WS] admin@127.0.0.1:62520 fully disconnected
+2026-03-30T09:31:47 [INFO] StockServer: [CM] -127.0.0.1:62521 | active=5
+2026-03-30T09:31:47 [INFO] StockServer: [WS] demo@127.0.0.1:62521 fully disconnected
+2026-03-30T09:31:48 [INFO] StockServer: [CM] -127.0.0.1:62515 | active=4
+2026-03-30T09:31:48 [INFO] StockServer: [WS] admin@127.0.0.1:62515 fully disconnected
+2026-03-30T09:31:49 [INFO] StockServer: [CM] -127.0.0.1:62522 | active=3
+2026-03-30T09:31:49 [INFO] StockServer: [WS] admin@127.0.0.1:62522 fully disconnected
+2026-03-30T09:31:49 [INFO] StockServer: [CM] -127.0.0.1:62523 | active=2
+2026-03-30T09:31:49 [INFO] StockServer: [WS] test@127.0.0.1:62523 fully disconnected
+2026-03-30T09:31:49 [INFO] StockServer: [CM] -127.0.0.1:62524 | active=1
+2026-03-30T09:31:49 [INFO] StockServer: [WS] ashwin@127.0.0.1:62524 fully disconnected
+2026-03-30T09:31:50 [INFO] StockServer: [CM] -127.0.0.1:62525 | active=0
+2026-03-30T09:31:50 [INFO] StockServer: [WS] admin@127.0.0.1:62525 fully disconnected
+2026-03-30T09:31:52 [INFO] StockServer: [WS] New connection: 127.0.0.1:62539
+2026-03-30T09:31:52 [INFO] StockServer: [WS] New connection: 127.0.0.1:62540
+2026-03-30T09:31:52 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:52 [INFO] StockServer: [CM] +127.0.0.1:62539 (ashwin) | active=1
+2026-03-30T09:31:52 [INFO] StockServer: [WS] New connection: 127.0.0.1:62541
+2026-03-30T09:31:52 [INFO] StockServer: [WS] New connection: 127.0.0.1:62542
+2026-03-30T09:31:52 [INFO] StockServer: [WS] New connection: 127.0.0.1:62543
+2026-03-30T09:31:52 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:52 [INFO] StockServer: [CM] +127.0.0.1:62540 (ashwin) | active=2
+2026-03-30T09:31:52 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:52 [INFO] StockServer: [CM] +127.0.0.1:62541 (ashwin) | active=3
+2026-03-30T09:31:52 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:52 [INFO] StockServer: [CM] +127.0.0.1:62542 (ashwin) | active=4
+2026-03-30T09:31:52 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T09:31:52 [INFO] StockServer: [CM] +127.0.0.1:62543 (ashwin) | active=5
+2026-03-30T09:31:54 [INFO] StockServer: [CM] -127.0.0.1:62539 | active=4
+2026-03-30T09:31:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:62539 fully disconnected
+2026-03-30T09:31:54 [INFO] StockServer: [CM] -127.0.0.1:62540 | active=3
+2026-03-30T09:31:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:62540 fully disconnected
+2026-03-30T09:31:54 [INFO] StockServer: [CM] -127.0.0.1:62541 | active=2
+2026-03-30T09:31:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:62541 fully disconnected
+2026-03-30T09:31:54 [INFO] StockServer: [CM] -127.0.0.1:62542 | active=1
+2026-03-30T09:31:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:62542 fully disconnected
+2026-03-30T09:31:54 [INFO] StockServer: [CM] -127.0.0.1:62543 | active=0
+2026-03-30T09:31:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:62543 fully disconnected
+2026-03-30T09:31:56 [INFO] StockServer: [WS] New connection: 127.0.0.1:62548
+2026-03-30T09:31:56 [WARNING] StockServer: [AUTH] 127.0.0.1 FAILED (1/5 attempts)
+2026-03-30T09:31:59 [INFO] StockServer: [SERVER] Shutdown...
+2026-03-30T09:31:59 [INFO] StockServer: [SERVER] Final DB stats: {'price_records': 792, 'connections': 16, 'auth_failures': 1, 'auth_blocked': 0}
+2026-03-30T10:11:15 [INFO] StockServer: ============================================================
+2026-03-30T10:11:15 [INFO] StockServer:   Real-Time Stock Tracker — Group-14 CN Assignment
+2026-03-30T10:11:15 [INFO] StockServer: ============================================================
+2026-03-30T10:11:15 [WARNING] StockServer: [TLS] No cert found — running in plaintext WS (dev only)
+2026-03-30T10:11:15 [INFO] StockServer: [SERVER] Listening: ws://0.0.0.0:8765
+2026-03-30T10:11:15 [INFO] StockServer: [SERVER] Valid tokens: ['TOKEN-ASHWIN-001', 'TOKEN-ADMIN-002', 'TOKEN-DEMO-003', 'TOKEN-TEST-004']
+2026-03-30T10:11:15 [INFO] StockServer: [SERVER] DB: db/stocks.db
+2026-03-30T10:11:15 [INFO] StockServer: [BROADCAST] Starting at 1.0 Hz
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49641
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49642
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49643
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49641 (admin) | active=1
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49644
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49645
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49646
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49647
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49648
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49649
+2026-03-30T10:11:25 [INFO] StockServer: [WS] New connection: 127.0.0.1:49650
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49642 (ashwin) | active=2
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49643 (demo) | active=3
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49644 (admin) | active=4
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49645 (ashwin) | active=5
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49646 (admin) | active=6
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49647 (test) | active=7
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49648 (demo) | active=8
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49649 (ashwin) | active=9
+2026-03-30T10:11:25 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-03-30T10:11:25 [INFO] StockServer: [CM] +127.0.0.1:49650 (test) | active=10
+2026-03-30T10:11:30 [INFO] StockServer: [WS] New connection: 127.0.0.1:51818
+2026-03-30T10:11:30 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:30 [INFO] StockServer: [CM] +127.0.0.1:51818 (ashwin) | active=11
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49641 | active=10
+2026-03-30T10:11:33 [INFO] StockServer: [WS] admin@127.0.0.1:49641 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49642 | active=9
+2026-03-30T10:11:33 [INFO] StockServer: [WS] ashwin@127.0.0.1:49642 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49643 | active=8
+2026-03-30T10:11:33 [INFO] StockServer: [WS] demo@127.0.0.1:49643 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49644 | active=7
+2026-03-30T10:11:33 [INFO] StockServer: [WS] admin@127.0.0.1:49644 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49645 | active=6
+2026-03-30T10:11:33 [INFO] StockServer: [WS] ashwin@127.0.0.1:49645 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49646 | active=5
+2026-03-30T10:11:33 [INFO] StockServer: [WS] admin@127.0.0.1:49646 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49647 | active=4
+2026-03-30T10:11:33 [INFO] StockServer: [WS] test@127.0.0.1:49647 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49648 | active=3
+2026-03-30T10:11:33 [INFO] StockServer: [WS] demo@127.0.0.1:49648 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49649 | active=2
+2026-03-30T10:11:33 [INFO] StockServer: [WS] ashwin@127.0.0.1:49649 fully disconnected
+2026-03-30T10:11:33 [INFO] StockServer: [CM] -127.0.0.1:49650 | active=1
+2026-03-30T10:11:33 [INFO] StockServer: [WS] test@127.0.0.1:49650 fully disconnected
+2026-03-30T10:11:35 [INFO] StockServer: [WS] New connection: 127.0.0.1:51830
+2026-03-30T10:11:35 [INFO] StockServer: [WS] New connection: 127.0.0.1:51831
+2026-03-30T10:11:35 [INFO] StockServer: [WS] New connection: 127.0.0.1:51832
+2026-03-30T10:11:35 [INFO] StockServer: [WS] New connection: 127.0.0.1:51833
+2026-03-30T10:11:35 [INFO] StockServer: [WS] New connection: 127.0.0.1:51834
+2026-03-30T10:11:35 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:35 [INFO] StockServer: [CM] +127.0.0.1:51830 (ashwin) | active=2
+2026-03-30T10:11:35 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:35 [INFO] StockServer: [CM] +127.0.0.1:51831 (ashwin) | active=3
+2026-03-30T10:11:35 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:35 [INFO] StockServer: [CM] +127.0.0.1:51832 (ashwin) | active=4
+2026-03-30T10:11:35 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:35 [INFO] StockServer: [CM] +127.0.0.1:51833 (ashwin) | active=5
+2026-03-30T10:11:35 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:35 [INFO] StockServer: [CM] +127.0.0.1:51834 (ashwin) | active=6
+2026-03-30T10:11:37 [INFO] StockServer: [CM] -127.0.0.1:51830 | active=5
+2026-03-30T10:11:37 [INFO] StockServer: [WS] ashwin@127.0.0.1:51830 fully disconnected
+2026-03-30T10:11:37 [INFO] StockServer: [CM] -127.0.0.1:51831 | active=4
+2026-03-30T10:11:37 [INFO] StockServer: [WS] ashwin@127.0.0.1:51831 fully disconnected
+2026-03-30T10:11:37 [INFO] StockServer: [CM] -127.0.0.1:51832 | active=3
+2026-03-30T10:11:37 [INFO] StockServer: [WS] ashwin@127.0.0.1:51832 fully disconnected
+2026-03-30T10:11:37 [INFO] StockServer: [CM] -127.0.0.1:51833 | active=2
+2026-03-30T10:11:37 [INFO] StockServer: [WS] ashwin@127.0.0.1:51833 fully disconnected
+2026-03-30T10:11:37 [INFO] StockServer: [CM] -127.0.0.1:51834 | active=1
+2026-03-30T10:11:37 [INFO] StockServer: [WS] ashwin@127.0.0.1:51834 fully disconnected
+2026-03-30T10:11:39 [INFO] StockServer: [WS] New connection: 127.0.0.1:51838
+2026-03-30T10:11:39 [WARNING] StockServer: [AUTH] 127.0.0.1 FAILED (1/5 attempts)
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51862
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51863
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51864
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51865
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51866
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51867
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51868
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51869
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51870
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51871
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51872
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51873
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51874
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51875
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51862 (demo) | active=2
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51863 (demo) | active=3
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51864 (demo) | active=4
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51865 (demo) | active=5
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51866 (demo) | active=6
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51867 (demo) | active=7
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51868 (demo) | active=8
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51869 (demo) | active=9
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51870 (demo) | active=10
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51871 (demo) | active=11
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51876
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51877
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51878
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51879
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51880
+2026-03-30T10:11:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:51881
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51872 (demo) | active=12
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51873 (demo) | active=13
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51874 (demo) | active=14
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51875 (demo) | active=15
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51876 (demo) | active=16
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51877 (demo) | active=17
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51878 (demo) | active=18
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51879 (demo) | active=19
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51880 (demo) | active=20
+2026-03-30T10:11:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T10:11:41 [INFO] StockServer: [CM] +127.0.0.1:51881 (demo) | active=21
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51862 | active=20
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51862 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51863 | active=19
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51863 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51864 | active=18
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51864 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51865 | active=17
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51865 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51866 | active=16
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51866 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51867 | active=15
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51867 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51868 | active=14
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51868 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51869 | active=13
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51869 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51870 | active=12
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51870 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51871 | active=11
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51871 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51872 | active=10
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51872 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51873 | active=9
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51873 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51874 | active=8
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51874 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51875 | active=7
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51875 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51876 | active=6
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51876 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51877 | active=5
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51877 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51878 | active=4
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51878 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51879 | active=3
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51879 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51880 | active=2
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51880 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51881 | active=1
+2026-03-30T10:11:41 [INFO] StockServer: [WS] demo@127.0.0.1:51881 fully disconnected
+2026-03-30T10:11:41 [INFO] StockServer: [CM] -127.0.0.1:51818 | active=0
+2026-03-30T10:11:41 [INFO] StockServer: [WS] ashwin@127.0.0.1:51818 fully disconnected
+2026-03-30T10:11:43 [INFO] StockServer: [WS] New connection: 127.0.0.1:51887
+2026-03-30T10:11:43 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:43 [INFO] StockServer: [CM] +127.0.0.1:51887 (ashwin) | active=1
+2026-03-30T10:11:46 [INFO] StockServer: [CM] -127.0.0.1:51887 | active=0
+2026-03-30T10:11:46 [INFO] StockServer: [WS] ashwin@127.0.0.1:51887 fully disconnected
+2026-03-30T10:11:47 [INFO] StockServer: [WS] New connection: 127.0.0.1:51892
+2026-03-30T10:11:47 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:11:47 [INFO] StockServer: [CM] +127.0.0.1:51892 (ashwin) | active=1
+2026-03-30T10:12:15 [INFO] StockServer: [TICK=60] clients=1 msgs=133 bytes=201601
+2026-03-30T10:12:23 [INFO] StockServer: [CM] -127.0.0.1:51892 | active=0
+2026-03-30T10:12:23 [INFO] StockServer: [WS] ashwin@127.0.0.1:51892 fully disconnected
+2026-03-30T10:13:15 [INFO] StockServer: [TICK=120] clients=0 msgs=141 bytes=213784
+2026-03-30T10:13:49 [INFO] StockServer: [WS] New connection: 127.0.0.1:62760
+2026-03-30T10:13:49 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:13:49 [INFO] StockServer: [CM] +127.0.0.1:62760 (ashwin) | active=1
+2026-03-30T10:13:52 [INFO] StockServer: [CM] -127.0.0.1:62760 | active=0
+2026-03-30T10:13:52 [INFO] StockServer: [WS] ashwin@127.0.0.1:62760 fully disconnected
+2026-03-30T10:13:57 [INFO] StockServer: [WS] New connection: 127.0.0.1:62773
+2026-03-30T10:13:57 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:13:57 [INFO] StockServer: [CM] +127.0.0.1:62773 (ashwin) | active=1
+2026-03-30T10:14:14 [INFO] StockServer: [CM] -127.0.0.1:62773 | active=0
+2026-03-30T10:14:14 [INFO] StockServer: [WS] ashwin@127.0.0.1:62773 fully disconnected
+2026-03-30T10:14:16 [INFO] StockServer: [TICK=180] clients=0 msgs=162 bytes=245769
+2026-03-30T10:14:16 [INFO] StockServer: [WS] New connection: 127.0.0.1:62798
+2026-03-30T10:14:16 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T10:14:16 [INFO] StockServer: [CM] +127.0.0.1:62798 (ashwin) | active=1
+2026-03-30T10:14:50 [INFO] StockServer: [CM] -127.0.0.1:62798 | active=0
+2026-03-30T10:14:50 [INFO] StockServer: [WS] ashwin@127.0.0.1:62798 fully disconnected
+2026-03-30T10:15:16 [INFO] StockServer: [TICK=240] clients=0 msgs=196 bytes=297551
+2026-03-30T10:15:41 [INFO] StockServer: [SERVER] Shutdown...
+2026-03-30T10:15:41 [INFO] StockServer: [SERVER] Final DB stats: {'price_records': 2904, 'connections': 57, 'auth_failures': 2, 'auth_blocked': 0}
+2026-03-30T13:30:39 [INFO] StockServer: ============================================================
+2026-03-30T13:30:39 [INFO] StockServer:   Real-Time Stock Tracker — Group-14 CN Assignment
+2026-03-30T13:30:39 [INFO] StockServer: ============================================================
+2026-03-30T13:30:39 [WARNING] StockServer: [TLS] No cert found — running in plaintext WS (dev only)
+2026-03-30T13:30:39 [INFO] StockServer: [SERVER] Listening: ws://0.0.0.0:8765
+2026-03-30T13:30:39 [INFO] StockServer: [SERVER] Valid tokens: ['TOKEN-ASHWIN-001', 'TOKEN-ADMIN-002', 'TOKEN-DEMO-003', 'TOKEN-TEST-004']
+2026-03-30T13:30:39 [INFO] StockServer: [SERVER] DB: db/stocks.db
+2026-03-30T13:30:39 [INFO] StockServer: [BROADCAST] Starting at 1.0 Hz
+2026-03-30T13:30:43 [INFO] StockServer: [WS] New connection: 127.0.0.1:52191
+2026-03-30T13:30:43 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:43 [INFO] StockServer: [CM] +127.0.0.1:52191 (ashwin) | active=1
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52204
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52205
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52206
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52207
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52208
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52209
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52210
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52211
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52212
+2026-03-30T13:30:46 [INFO] StockServer: [WS] New connection: 127.0.0.1:52213
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52204 (admin) | active=2
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52205 (demo) | active=3
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52206 (test) | active=4
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52207 (admin) | active=5
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52208 (test) | active=6
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52209 (admin) | active=7
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52210 (demo) | active=8
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52211 (ashwin) | active=9
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52212 (ashwin) | active=10
+2026-03-30T13:30:46 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:46 [INFO] StockServer: [CM] +127.0.0.1:52213 (ashwin) | active=11
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52204 | active=10
+2026-03-30T13:30:54 [INFO] StockServer: [WS] admin@127.0.0.1:52204 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52205 | active=9
+2026-03-30T13:30:54 [INFO] StockServer: [WS] demo@127.0.0.1:52205 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52206 | active=8
+2026-03-30T13:30:54 [INFO] StockServer: [WS] test@127.0.0.1:52206 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52207 | active=7
+2026-03-30T13:30:54 [INFO] StockServer: [WS] admin@127.0.0.1:52207 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52208 | active=6
+2026-03-30T13:30:54 [INFO] StockServer: [WS] test@127.0.0.1:52208 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52209 | active=5
+2026-03-30T13:30:54 [INFO] StockServer: [WS] admin@127.0.0.1:52209 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52210 | active=4
+2026-03-30T13:30:54 [INFO] StockServer: [WS] demo@127.0.0.1:52210 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52211 | active=3
+2026-03-30T13:30:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:52211 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52212 | active=2
+2026-03-30T13:30:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:52212 fully disconnected
+2026-03-30T13:30:54 [INFO] StockServer: [CM] -127.0.0.1:52213 | active=1
+2026-03-30T13:30:54 [INFO] StockServer: [WS] ashwin@127.0.0.1:52213 fully disconnected
+2026-03-30T13:30:56 [INFO] StockServer: [WS] New connection: 127.0.0.1:52223
+2026-03-30T13:30:56 [INFO] StockServer: [WS] New connection: 127.0.0.1:52224
+2026-03-30T13:30:56 [INFO] StockServer: [WS] New connection: 127.0.0.1:52225
+2026-03-30T13:30:56 [INFO] StockServer: [WS] New connection: 127.0.0.1:52226
+2026-03-30T13:30:56 [INFO] StockServer: [WS] New connection: 127.0.0.1:52227
+2026-03-30T13:30:56 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:56 [INFO] StockServer: [CM] +127.0.0.1:52223 (ashwin) | active=2
+2026-03-30T13:30:56 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:56 [INFO] StockServer: [CM] +127.0.0.1:52224 (ashwin) | active=3
+2026-03-30T13:30:56 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:56 [INFO] StockServer: [CM] +127.0.0.1:52225 (ashwin) | active=4
+2026-03-30T13:30:56 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:56 [INFO] StockServer: [CM] +127.0.0.1:52226 (ashwin) | active=5
+2026-03-30T13:30:56 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:30:56 [INFO] StockServer: [CM] +127.0.0.1:52227 (ashwin) | active=6
+2026-03-30T13:30:58 [INFO] StockServer: [CM] -127.0.0.1:52223 | active=5
+2026-03-30T13:30:58 [INFO] StockServer: [WS] ashwin@127.0.0.1:52223 fully disconnected
+2026-03-30T13:30:58 [INFO] StockServer: [CM] -127.0.0.1:52224 | active=4
+2026-03-30T13:30:58 [INFO] StockServer: [WS] ashwin@127.0.0.1:52224 fully disconnected
+2026-03-30T13:30:58 [INFO] StockServer: [CM] -127.0.0.1:52225 | active=3
+2026-03-30T13:30:58 [INFO] StockServer: [WS] ashwin@127.0.0.1:52225 fully disconnected
+2026-03-30T13:30:58 [INFO] StockServer: [CM] -127.0.0.1:52226 | active=2
+2026-03-30T13:30:58 [INFO] StockServer: [WS] ashwin@127.0.0.1:52226 fully disconnected
+2026-03-30T13:30:58 [INFO] StockServer: [CM] -127.0.0.1:52227 | active=1
+2026-03-30T13:30:58 [INFO] StockServer: [WS] ashwin@127.0.0.1:52227 fully disconnected
+2026-03-30T13:31:00 [INFO] StockServer: [WS] New connection: 127.0.0.1:52230
+2026-03-30T13:31:00 [WARNING] StockServer: [AUTH] 127.0.0.1 FAILED (1/5 attempts)
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52252
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52253
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52254
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52255
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52256
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52257
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52258
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52259
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52260
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52261
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52262
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52263
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52264
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52265
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52266
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52267
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52268
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52269
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52270
+2026-03-30T13:31:02 [INFO] StockServer: [WS] New connection: 127.0.0.1:52271
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52252 (demo) | active=2
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52253 (demo) | active=3
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52254 (demo) | active=4
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52255 (demo) | active=5
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52256 (demo) | active=6
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52257 (demo) | active=7
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52258 (demo) | active=8
+2026-03-30T13:31:02 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:02 [INFO] StockServer: [CM] +127.0.0.1:52259 (demo) | active=9
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52260 (demo) | active=10
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52261 (demo) | active=11
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52262 (demo) | active=12
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52263 (demo) | active=13
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52264 (demo) | active=14
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52265 (demo) | active=15
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52266 (demo) | active=16
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52267 (demo) | active=17
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52268 (demo) | active=18
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52269 (demo) | active=19
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52270 (demo) | active=20
+2026-03-30T13:31:03 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-03-30T13:31:03 [INFO] StockServer: [CM] +127.0.0.1:52271 (demo) | active=21
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52252 | active=20
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52252 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52253 | active=19
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52253 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52254 | active=18
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52254 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52255 | active=17
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52255 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52256 | active=16
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52256 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52257 | active=15
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52257 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52258 | active=14
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52258 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52259 | active=13
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52259 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52260 | active=12
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52260 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52261 | active=11
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52261 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52262 | active=10
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52262 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52263 | active=9
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52263 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52264 | active=8
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52264 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52265 | active=7
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52265 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52266 | active=6
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52266 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52267 | active=5
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52267 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52268 | active=4
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52268 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52269 | active=3
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52269 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52270 | active=2
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52270 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52271 | active=1
+2026-03-30T13:31:03 [INFO] StockServer: [WS] demo@127.0.0.1:52271 fully disconnected
+2026-03-30T13:31:03 [INFO] StockServer: [CM] -127.0.0.1:52191 | active=0
+2026-03-30T13:31:03 [INFO] StockServer: [WS] ashwin@127.0.0.1:52191 fully disconnected
+2026-03-30T13:31:06 [INFO] StockServer: [WS] New connection: 127.0.0.1:52277
+2026-03-30T13:31:06 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:31:06 [INFO] StockServer: [CM] +127.0.0.1:52277 (ashwin) | active=1
+2026-03-30T13:31:07 [INFO] StockServer: [CM] -127.0.0.1:52277 | active=0
+2026-03-30T13:31:07 [INFO] StockServer: [WS] ashwin@127.0.0.1:52277 fully disconnected
+2026-03-30T13:31:09 [INFO] StockServer: [WS] New connection: 127.0.0.1:52280
+2026-03-30T13:31:09 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:31:09 [INFO] StockServer: [CM] +127.0.0.1:52280 (ashwin) | active=1
+2026-03-30T13:31:38 [INFO] StockServer: [TICK=60] clients=1 msgs=151 bytes=229284
+2026-03-30T13:31:43 [INFO] StockServer: [CM] -127.0.0.1:52280 | active=0
+2026-03-30T13:31:43 [INFO] StockServer: [WS] ashwin@127.0.0.1:52280 fully disconnected
+2026-03-30T13:31:48 [INFO] StockServer: [WS] New connection: 127.0.0.1:52300
+2026-03-30T13:31:48 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:31:48 [INFO] StockServer: [CM] +127.0.0.1:52300 (ashwin) | active=1
+2026-03-30T13:32:13 [INFO] StockServer: [CM] -127.0.0.1:52300 | active=0
+2026-03-30T13:32:13 [INFO] StockServer: [WS] ashwin@127.0.0.1:52300 fully disconnected
+2026-03-30T13:32:39 [INFO] StockServer: [TICK=120] clients=0 msgs=179 bytes=272055
+2026-03-30T13:32:49 [INFO] StockServer: [WS] New connection: 127.0.0.1:52335
+2026-03-30T13:32:49 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:32:49 [INFO] StockServer: [CM] +127.0.0.1:52335 (ashwin) | active=1
+2026-03-30T13:32:49 [INFO] StockServer: [CM] -127.0.0.1:52335 | active=0
+2026-03-30T13:32:49 [INFO] StockServer: [WS] ashwin@127.0.0.1:52335 fully disconnected
+2026-03-30T13:32:50 [INFO] StockServer: [WS] New connection: 127.0.0.1:52340
+2026-03-30T13:32:50 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:32:50 [INFO] StockServer: [CM] +127.0.0.1:52340 (ashwin) | active=1
+2026-03-30T13:32:56 [INFO] StockServer: [CM] -127.0.0.1:52340 | active=0
+2026-03-30T13:32:56 [INFO] StockServer: [WS] ashwin@127.0.0.1:52340 fully disconnected
+2026-03-30T13:32:58 [INFO] StockServer: [WS] New connection: 127.0.0.1:52346
+2026-03-30T13:32:58 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:32:58 [INFO] StockServer: [CM] +127.0.0.1:52346 (ashwin) | active=1
+2026-03-30T13:33:16 [INFO] StockServer: [CM] -127.0.0.1:52346 | active=0
+2026-03-30T13:33:16 [INFO] StockServer: [WS] ashwin@127.0.0.1:52346 fully disconnected
+2026-03-30T13:33:39 [INFO] StockServer: [TICK=180] clients=0 msgs=204 bytes=310273
+2026-03-30T13:33:40 [INFO] StockServer: [WS] New connection: 127.0.0.1:52377
+2026-03-30T13:33:40 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:33:40 [INFO] StockServer: [CM] +127.0.0.1:52377 (ashwin) | active=1
+2026-03-30T13:34:10 [INFO] StockServer: [CM] -127.0.0.1:52377 | active=0
+2026-03-30T13:34:10 [INFO] StockServer: [WS] ashwin@127.0.0.1:52377 fully disconnected
+2026-03-30T13:34:40 [INFO] StockServer: [TICK=240] clients=0 msgs=234 bytes=356102
+2026-03-30T13:35:40 [INFO] StockServer: [TICK=300] clients=0 msgs=234 bytes=356102
+2026-03-30T13:36:41 [INFO] StockServer: [TICK=360] clients=0 msgs=234 bytes=356102
+2026-03-30T13:37:18 [INFO] StockServer: [WS] New connection: 127.0.0.1:52497
+2026-03-30T13:37:18 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:37:18 [INFO] StockServer: [CM] +127.0.0.1:52497 (ashwin) | active=1
+2026-03-30T13:37:42 [INFO] StockServer: [TICK=420] clients=1 msgs=257 bytes=391405
+2026-03-30T13:37:51 [INFO] StockServer: [CM] -127.0.0.1:52497 | active=0
+2026-03-30T13:37:51 [INFO] StockServer: [WS] ashwin@127.0.0.1:52497 fully disconnected
+2026-03-30T13:38:42 [INFO] StockServer: [TICK=480] clients=0 msgs=266 bytes=405224
+2026-03-30T13:39:43 [INFO] StockServer: [TICK=540] clients=0 msgs=266 bytes=405224
+2026-03-30T13:40:43 [INFO] StockServer: [TICK=600] clients=0 msgs=266 bytes=405224
+2026-03-30T13:41:44 [INFO] StockServer: [TICK=660] clients=0 msgs=266 bytes=405224
+2026-03-30T13:42:22 [INFO] StockServer: [WS] New connection: 127.0.0.1:52668
+2026-03-30T13:42:22 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:42:22 [INFO] StockServer: [CM] +127.0.0.1:52668 (ashwin) | active=1
+2026-03-30T13:42:30 [INFO] StockServer: [CM] -127.0.0.1:52668 | active=0
+2026-03-30T13:42:30 [INFO] StockServer: [WS] ashwin@127.0.0.1:52668 fully disconnected
+2026-03-30T13:42:31 [INFO] StockServer: [WS] New connection: 127.0.0.1:52676
+2026-03-30T13:42:31 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-03-30T13:42:31 [INFO] StockServer: [CM] +127.0.0.1:52676 (ashwin) | active=1
+2026-03-30T13:42:44 [INFO] StockServer: [TICK=720] clients=1 msgs=287 bytes=437456
+2026-03-30T13:42:46 [INFO] StockServer: [CM] -127.0.0.1:52676 | active=0
+2026-03-30T13:42:46 [INFO] StockServer: [WS] ashwin@127.0.0.1:52676 fully disconnected
+2026-03-30T13:42:56 [INFO] StockServer: [SERVER] Shutdown...
+2026-03-30T13:42:56 [INFO] StockServer: [SERVER] Final DB stats: {'price_records': 8760, 'connections': 103, 'auth_failures': 3, 'auth_blocked': 0}
+2026-04-09T16:08:04 [INFO] StockServer: ============================================================
+2026-04-09T16:08:04 [INFO] StockServer:   Real-Time Stock Tracker — Group-14 CN Assignment
+2026-04-09T16:08:04 [INFO] StockServer: ============================================================
+2026-04-09T16:08:04 [WARNING] StockServer: [TLS] No cert found — running in plaintext WS (dev only)
+2026-04-09T16:08:04 [INFO] StockServer: [SERVER] Listening: ws://0.0.0.0:8765
+2026-04-09T16:08:04 [INFO] StockServer: [SERVER] Valid tokens: ['TOKEN-ASHWIN-001', 'TOKEN-ADMIN-002', 'TOKEN-DEMO-003', 'TOKEN-TEST-004']
+2026-04-09T16:08:04 [INFO] StockServer: [SERVER] DB: db/stocks.db
+2026-04-09T16:08:04 [INFO] StockServer: [BROADCAST] Starting at 1.0 Hz
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61858
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61859
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61858 (test) | active=1
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61860
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61861
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61862
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61863
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61864
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61865
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61866
+2026-04-09T16:08:19 [INFO] StockServer: [WS] New connection: 127.0.0.1:61867
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61859 (admin) | active=2
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61860 (admin) | active=3
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61861 (ashwin) | active=4
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61862 (demo) | active=5
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'admin'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61863 (admin) | active=6
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'test'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61864 (test) | active=7
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61865 (ashwin) | active=8
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61866 (ashwin) | active=9
+2026-04-09T16:08:19 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:19 [INFO] StockServer: [CM] +127.0.0.1:61867 (demo) | active=10
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61858 | active=9
+2026-04-09T16:08:28 [INFO] StockServer: [WS] test@127.0.0.1:61858 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61859 | active=8
+2026-04-09T16:08:28 [INFO] StockServer: [WS] admin@127.0.0.1:61859 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61860 | active=7
+2026-04-09T16:08:28 [INFO] StockServer: [WS] admin@127.0.0.1:61860 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61861 | active=6
+2026-04-09T16:08:28 [INFO] StockServer: [WS] ashwin@127.0.0.1:61861 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61862 | active=5
+2026-04-09T16:08:28 [INFO] StockServer: [WS] demo@127.0.0.1:61862 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61863 | active=4
+2026-04-09T16:08:28 [INFO] StockServer: [WS] admin@127.0.0.1:61863 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61864 | active=3
+2026-04-09T16:08:28 [INFO] StockServer: [WS] test@127.0.0.1:61864 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61865 | active=2
+2026-04-09T16:08:28 [INFO] StockServer: [WS] ashwin@127.0.0.1:61865 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61866 | active=1
+2026-04-09T16:08:28 [INFO] StockServer: [WS] ashwin@127.0.0.1:61866 fully disconnected
+2026-04-09T16:08:28 [INFO] StockServer: [CM] -127.0.0.1:61867 | active=0
+2026-04-09T16:08:28 [INFO] StockServer: [WS] demo@127.0.0.1:61867 fully disconnected
+2026-04-09T16:08:30 [INFO] StockServer: [WS] New connection: 127.0.0.1:61884
+2026-04-09T16:08:30 [INFO] StockServer: [WS] New connection: 127.0.0.1:61885
+2026-04-09T16:08:30 [INFO] StockServer: [WS] New connection: 127.0.0.1:61886
+2026-04-09T16:08:30 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:30 [INFO] StockServer: [CM] +127.0.0.1:61884 (ashwin) | active=1
+2026-04-09T16:08:30 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:30 [INFO] StockServer: [CM] +127.0.0.1:61885 (ashwin) | active=2
+2026-04-09T16:08:30 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:30 [INFO] StockServer: [CM] +127.0.0.1:61886 (ashwin) | active=3
+2026-04-09T16:08:30 [INFO] StockServer: [WS] New connection: 127.0.0.1:61887
+2026-04-09T16:08:30 [INFO] StockServer: [WS] New connection: 127.0.0.1:61888
+2026-04-09T16:08:30 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:30 [INFO] StockServer: [CM] +127.0.0.1:61887 (ashwin) | active=4
+2026-04-09T16:08:30 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:30 [INFO] StockServer: [CM] +127.0.0.1:61888 (ashwin) | active=5
+2026-04-09T16:08:32 [INFO] StockServer: [CM] -127.0.0.1:61884 | active=4
+2026-04-09T16:08:32 [INFO] StockServer: [WS] ashwin@127.0.0.1:61884 fully disconnected
+2026-04-09T16:08:32 [INFO] StockServer: [CM] -127.0.0.1:61885 | active=3
+2026-04-09T16:08:32 [INFO] StockServer: [WS] ashwin@127.0.0.1:61885 fully disconnected
+2026-04-09T16:08:32 [INFO] StockServer: [CM] -127.0.0.1:61886 | active=2
+2026-04-09T16:08:32 [INFO] StockServer: [WS] ashwin@127.0.0.1:61886 fully disconnected
+2026-04-09T16:08:32 [INFO] StockServer: [CM] -127.0.0.1:61887 | active=1
+2026-04-09T16:08:32 [INFO] StockServer: [WS] ashwin@127.0.0.1:61887 fully disconnected
+2026-04-09T16:08:32 [INFO] StockServer: [CM] -127.0.0.1:61888 | active=0
+2026-04-09T16:08:32 [INFO] StockServer: [WS] ashwin@127.0.0.1:61888 fully disconnected
+2026-04-09T16:08:34 [INFO] StockServer: [WS] New connection: 127.0.0.1:61895
+2026-04-09T16:08:34 [WARNING] StockServer: [AUTH] 127.0.0.1 FAILED (1/5 attempts)
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61921
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61922
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61923
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61924
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61925
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61926
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61927
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61928
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61921 (demo) | active=1
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61922 (demo) | active=2
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61923 (demo) | active=3
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61929
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61924 (demo) | active=4
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61925 (demo) | active=5
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61926 (demo) | active=6
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61927 (demo) | active=7
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61928 (demo) | active=8
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61935
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61930
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61931
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61932
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61933
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61934
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61936
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61929 (demo) | active=9
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61937
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61935 (demo) | active=10
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61930 (demo) | active=11
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61931 (demo) | active=12
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61932 (demo) | active=13
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61933 (demo) | active=14
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61934 (demo) | active=15
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61938
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61936 (demo) | active=16
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61939
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61937 (demo) | active=17
+2026-04-09T16:08:36 [INFO] StockServer: [CM] -127.0.0.1:61921 | active=16
+2026-04-09T16:08:36 [INFO] StockServer: [WS] demo@127.0.0.1:61921 fully disconnected
+2026-04-09T16:08:36 [INFO] StockServer: [CM] -127.0.0.1:61922 | active=15
+2026-04-09T16:08:36 [INFO] StockServer: [WS] demo@127.0.0.1:61922 fully disconnected
+2026-04-09T16:08:36 [INFO] StockServer: [WS] New connection: 127.0.0.1:61940
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61938 (demo) | active=16
+2026-04-09T16:08:36 [INFO] StockServer: [CM] -127.0.0.1:61923 | active=15
+2026-04-09T16:08:36 [INFO] StockServer: [WS] demo@127.0.0.1:61923 fully disconnected
+2026-04-09T16:08:36 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:36 [INFO] StockServer: [CM] +127.0.0.1:61939 (demo) | active=16
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61924 | active=15
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61924 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61925 | active=14
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61925 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61926 | active=13
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61926 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61927 | active=12
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61927 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61928 | active=11
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61928 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'demo'
+2026-04-09T16:08:37 [INFO] StockServer: [CM] +127.0.0.1:61940 (demo) | active=12
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61929 | active=11
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61929 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61935 | active=10
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61935 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61930 | active=9
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61930 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61931 | active=8
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61931 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61932 | active=7
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61932 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61933 | active=6
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61933 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61934 | active=5
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61934 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61936 | active=4
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61936 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61937 | active=3
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61937 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61938 | active=2
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61938 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61939 | active=1
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61939 fully disconnected
+2026-04-09T16:08:37 [INFO] StockServer: [CM] -127.0.0.1:61940 | active=0
+2026-04-09T16:08:37 [INFO] StockServer: [WS] demo@127.0.0.1:61940 fully disconnected
+2026-04-09T16:08:41 [INFO] StockServer: [WS] New connection: 127.0.0.1:61948
+2026-04-09T16:08:41 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:08:41 [INFO] StockServer: [CM] +127.0.0.1:61948 (ashwin) | active=1
+2026-04-09T16:09:04 [INFO] StockServer: [TICK=60] clients=1 msgs=134 bytes=203262
+2026-04-09T16:09:10 [INFO] StockServer: [CM] -127.0.0.1:61948 | active=0
+2026-04-09T16:09:10 [INFO] StockServer: [WS] ashwin@127.0.0.1:61948 fully disconnected
+2026-04-09T16:09:11 [INFO] StockServer: [WS] New connection: 127.0.0.1:61984
+2026-04-09T16:09:11 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:09:11 [INFO] StockServer: [CM] +127.0.0.1:61984 (ashwin) | active=1
+2026-04-09T16:09:47 [INFO] StockServer: [CM] -127.0.0.1:61984 | active=0
+2026-04-09T16:09:47 [INFO] StockServer: [WS] ashwin@127.0.0.1:61984 fully disconnected
+2026-04-09T16:09:50 [INFO] StockServer: [WS] New connection: 127.0.0.1:62020
+2026-04-09T16:09:50 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:09:50 [INFO] StockServer: [CM] +127.0.0.1:62020 (ashwin) | active=1
+2026-04-09T16:10:04 [INFO] StockServer: [TICK=120] clients=1 msgs=191 bytes=290189
+2026-04-09T16:10:25 [INFO] StockServer: [CM] -127.0.0.1:62020 | active=0
+2026-04-09T16:10:25 [INFO] StockServer: [WS] ashwin@127.0.0.1:62020 fully disconnected
+2026-04-09T16:10:29 [INFO] StockServer: [WS] New connection: 127.0.0.1:62074
+2026-04-09T16:10:29 [INFO] StockServer: [AUTH] 127.0.0.1 OK as 'ashwin'
+2026-04-09T16:10:29 [INFO] StockServer: [CM] +127.0.0.1:62074 (ashwin) | active=1
+2026-04-09T16:11:01 [INFO] StockServer: [CM] -127.0.0.1:62074 | active=0
+2026-04-09T16:11:01 [INFO] StockServer: [WS] ashwin@127.0.0.1:62074 fully disconnected
+2026-04-09T16:11:05 [INFO] StockServer: [TICK=180] clients=0 msgs=243 bytes=369479
+2026-04-09T16:12:06 [INFO] StockServer: [TICK=240] clients=0 msgs=243 bytes=369479
+2026-04-09T16:13:06 [INFO] StockServer: [TICK=300] clients=0 msgs=243 bytes=369479
+2026-04-09T16:14:07 [INFO] StockServer: [TICK=360] clients=0 msgs=243 bytes=369479
+2026-04-09T16:15:07 [INFO] StockServer: [TICK=420] clients=0 msgs=243 bytes=369479
+2026-04-09T16:16:08 [INFO] StockServer: [TICK=480] clients=0 msgs=243 bytes=369479
+2026-04-09T16:17:08 [INFO] StockServer: [TICK=540] clients=0 msgs=243 bytes=369479
+2026-04-09T16:18:09 [INFO] StockServer: [TICK=600] clients=0 msgs=243 bytes=369479
+2026-04-09T16:19:10 [INFO] StockServer: [TICK=660] clients=0 msgs=243 bytes=369479
+2026-04-09T16:20:10 [INFO] StockServer: [TICK=720] clients=0 msgs=243 bytes=369479
+2026-04-09T16:21:11 [INFO] StockServer: [TICK=780] clients=0 msgs=243 bytes=369479
+2026-04-09T16:22:11 [INFO] StockServer: [TICK=840] clients=0 msgs=243 bytes=369479
+2026-04-09T16:23:12 [INFO] StockServer: [TICK=900] clients=0 msgs=243 bytes=369479
+2026-04-09T16:24:13 [INFO] StockServer: [TICK=960] clients=0 msgs=243 bytes=369479
+2026-04-09T16:25:13 [INFO] StockServer: [TICK=1020] clients=0 msgs=243 bytes=369479
+2026-04-09T16:26:14 [INFO] StockServer: [TICK=1080] clients=0 msgs=243 bytes=369479
+2026-04-09T16:26:25 [INFO] StockServer: [SERVER] Shutdown...
+2026-04-09T16:26:25 [INFO] StockServer: [SERVER] Final DB stats: {'price_records': 17480, 'connections': 142, 'auth_failures': 4, 'auth_blocked': 0}
