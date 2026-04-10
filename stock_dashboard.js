@@ -412,62 +412,6 @@ function connect(server, token) {
   };
 }
 
-// ── DEMO MODE — commented out (requires live server) ────────────────────────
-// function startDemoMode(token) {
-//   state.demoMode = true;
-//   const sb = document.getElementById('source-badge');
-//   sb.className = 'source-badge source-demo';
-//   sb.textContent = '\u25CF DEMO \u2014 SIMULATED';
-//   const users = {
-//     "TOKEN-ASHWIN-001":"ashwin","TOKEN-ADMIN-002":"admin",
-//     "TOKEN-DEMO-003":"demo","TOKEN-TEST-004":"test"
-//   };
-//   const username = users[token] || "demo";
-//   setConnected(username, "WS (DEMO)");
-//   addLog(`DEMO mode active — simulating server locally`, 'warn');
-//   addLog(`All socket options & DB features require Python server`, 'warn');
-//
-//   let tick = 0;
-//   const openPrices = {...DEMO_BASE};
-//   const prices     = {...DEMO_BASE};
-//   const highs      = {...DEMO_BASE};
-//   const lows       = {...DEMO_BASE};
-//   const vols       = Object.fromEntries(SYMBOLS.map(s=>[s,0]));
-//
-//   state.demoInterval = setInterval(() => {
-//     tick++;
-//     const updates = [];
-//     SYMBOLS.forEach(sym => {
-//       const dS = prices[sym] * (0.0001 + 0.002 * (Math.random()*2-1));
-//       prices[sym] = Math.max(1, prices[sym] + dS);
-//       const p = parseFloat(prices[sym].toFixed(2));
-//       highs[sym] = Math.max(highs[sym], p);
-//       lows[sym]  = Math.min(lows[sym], p);
-//       vols[sym] += Math.floor(Math.random()*5000 + 100);
-//       const chg = parseFloat(((p - openPrices[sym]) / openPrices[sym] * 100).toFixed(3));
-//       updates.push({
-//         type:"price_update", symbol:sym, price:p,
-//         open:parseFloat(openPrices[sym].toFixed(2)),
-//         high:parseFloat(highs[sym].toFixed(2)),
-//         low:parseFloat(lows[sym].toFixed(2)),
-//         volume:vols[sym], change_pct:chg,
-//         ts: new Date().toISOString()
-//       });
-//     });
-//     state.tickCount++;
-//     state.updateCount += updates.length;
-//     state.msgCount++;
-//     state.bytesReceived += JSON.stringify(updates).length;
-//     updates.forEach(u => updateCard(u.symbol, u));
-//     updateMetrics(Math.random() * 3 + 0.5);
-//     updateTicker();
-//     if (tick % 30 === 0) {
-//       addLog(`[DEMO] Tick #${tick} | GBM simulation active`, 'data');
-//       document.getElementById('stat-db').textContent = tick * 8 + ' (sim)';
-//     }
-//   }, 1000);
-// }
-
 // ── Auth Form ─────────────────────────────────────────────────────────────────
 document.getElementById('auth-user-select').addEventListener('change', function() {
   document.getElementById('auth-token').value = this.value;
